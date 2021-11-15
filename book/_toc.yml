@@ -1,0 +1,12 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Describing genetic variation at the sequence level
+    chapters:
+    - file: markdown/describing_variation_data/variation_data_intro
+    - file: markdown/describing_variation_data/descriptive_statistics
+    - file: markdown/describing_variation_data/real_data_complications
+    - file: markdown/describing_variation_data/bioinformatics
+  - caption: Appendix
+    chapters:
+    - file: markdown/bibliography
