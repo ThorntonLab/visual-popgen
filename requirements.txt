@@ -1,3 +1,5 @@
+bokeh
+holoviews
 jupyter-book
 matplotlib
 numpy

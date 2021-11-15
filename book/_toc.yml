@@ -6,6 +6,9 @@ parts:
     - file: markdown/classic_selection_drift/haploids
     - file: markdown/classic_selection_drift/diploids
     - file: markdown/classic_selection_drift/diploid_fixation
+  - caption: Linked selection
+    chapters:
+    - file: markdown/classic_selection_drift/sweep_from_new_mutation
   - caption: Describing genetic variation at the sequence level
     chapters:
     - file: markdown/describing_variation_data/variation_data_intro
