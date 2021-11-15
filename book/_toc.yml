@@ -1,6 +1,11 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Classic models of selection and drift at a single locus
+    chapters:
+    - file: markdown/classic_selection_drift/haploids
+    - file: markdown/classic_selection_drift/diploids
+    - file: markdown/classic_selection_drift/diploid_fixation
   - caption: Describing genetic variation at the sequence level
     chapters:
     - file: markdown/describing_variation_data/variation_data_intro
