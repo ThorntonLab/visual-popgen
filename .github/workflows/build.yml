@@ -51,7 +51,7 @@ jobs:
 
       - name: Move built HTML book
         if: github.event_name == 'release'
-        working-directory: doc
+        working-directory: book
         run: |
           mv _build/html ../book_output
 
@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: book_output
-          path: docs_output/
+          path: book_output/
 
   deploy:
     name: deploy
