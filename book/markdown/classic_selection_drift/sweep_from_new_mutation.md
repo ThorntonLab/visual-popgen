@@ -81,7 +81,7 @@ for rho in RHO:
                 population_size=Ne,
                 recombination_rate=rho / (L * 4 * Ne),
                 sequence_length=L,
-                num_replicates=25,
+                num_replicates=10,
                 random_seed=12345,
             )
         ):
