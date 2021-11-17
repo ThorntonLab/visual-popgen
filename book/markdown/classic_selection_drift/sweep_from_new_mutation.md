@@ -16,7 +16,7 @@ This image recreates results from Figure 3 of {cite:t}`Kim2002-to`.
 
 ```{code-cell}
 ---
-"tags": [ "hide-input" ]
+"tags": [ "remove-input" ]
 ---
 
 import holoviews as hv
@@ -81,7 +81,7 @@ for rho in RHO:
                 population_size=Ne,
                 recombination_rate=rho / (L * 4 * Ne),
                 sequence_length=L,
-                num_replicates=25,
+                num_replicates=10,
                 random_seed=12345,
             )
         ):
