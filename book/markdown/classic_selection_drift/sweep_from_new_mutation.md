@@ -16,7 +16,7 @@ This image recreates results from Figure 3 of {cite:t}`Kim2002-to`.
 
 ```{code-cell}
 ---
-"tags": [ "hide-input" ]
+"tags": [ "remove-input" ]
 ---
 
 import holoviews as hv
