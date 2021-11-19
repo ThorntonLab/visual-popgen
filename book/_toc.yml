@@ -6,6 +6,14 @@ parts:
     - file: markdown/classic_selection_drift/haploids
     - file: markdown/classic_selection_drift/diploids
     - file: markdown/classic_selection_drift/diploid_fixation
+  - caption: The Kingman coalescent
+    chapters:
+    - file: markdown/kingman_coalsecent/tree_structure
+    - file: markdown/kingman_coalsecent/model_for_data
+    - file: markdown/kingman_coalsecent/trees
+    - file: markdown/kingman_coalsecent/trees_with_recombination
+    - file: markdown/kingman_coalsecent/mutation_frequencies
+    - file: markdown/kingman_coalsecent/expectaions
   - caption: Linked selection
     chapters:
     - file: markdown/classic_selection_drift/sweep_from_new_mutation
