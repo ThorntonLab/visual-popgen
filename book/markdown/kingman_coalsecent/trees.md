@@ -18,7 +18,7 @@ The node label format is `id: birth time, number of (extant) descendants`.
 
 ```{code-cell}
 ---
-"tags": ["remove-input", "hide-output"]
+"tags": ["remove-input", "hide-output", "remove-output"]
 ---
 
 import msprime
