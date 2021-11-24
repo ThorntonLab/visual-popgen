@@ -1,4 +1,5 @@
 bokeh
+demes
 holoviews
 jupyter-book
 matplotlib
@@ -7,3 +8,4 @@ msprime==1.0.1
 pandas
 pytest
 scipy
+git+https://bitbucket.org/simongravel/moments.git

@@ -1,0 +1,82 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# Experiments with moments
+
+```{code-cell}
+import demes
+import moments
+
+model = """
+description: The Gutenkunst et al. (2009) three-population model of human history.
+doi:
+  - https://doi.org/10.1371/journal.pgen.1000695
+time_units: years
+generation_time: 25
+demes:
+  - name: ancestral
+    description: Equilibrium/root population
+    epochs:
+    - end_time: 220e3
+      start_size: 7300
+  - name: AMH
+    description: Anatomically modern humans
+    ancestors: [ancestral]
+    epochs:
+    - end_time: 140e3
+      start_size: 12300
+  - name: OOA
+    description: Bottleneck out-of-Africa population
+    ancestors: [AMH]
+    epochs:
+    - end_time: 21.2e3
+      start_size: 2100
+  - name: YRI
+    description: Yoruba in Ibadan, Nigeria
+    ancestors: [AMH]
+    epochs:
+    - start_size: 12300
+      end_time: 0
+  - name: CEU
+    description: Utah Residents (CEPH) with Northern and Western European Ancestry
+    ancestors: [OOA]
+    epochs:
+    - start_size: 1000
+      end_size: 29725
+      end_time: 0
+  - name: CHB
+    description: Han Chinese in Beijing, China
+    ancestors: [OOA]
+    epochs:
+    - start_size: 510
+      end_size: 54090
+      end_time: 0
+migrations:
+  - demes: [YRI, OOA]
+    rate: 25e-5
+  - demes: [YRI, CEU]
+    rate: 3e-5
+  - demes: [YRI, CHB]
+    rate: 1.9e-5
+  - demes: [CEU, CHB]
+    rate: 9.6e-5
+"""
+
+g = demes.loads(model)
+
+sampled_demes = ["YRI", "CEU", "CHB"]
+sample_sizes = [10, 10, 10]
+
+fs = moments.Spectrum.from_demes(
+    g, sampled_demes=sampled_demes, sample_sizes=sample_sizes
+)
+```

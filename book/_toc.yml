@@ -17,6 +17,9 @@ parts:
   - caption: Linked selection
     chapters:
     - file: markdown/classic_selection_drift/sweep_from_new_mutation
+  - caption: Ancestry and population structure
+    chapters:
+    - file: markdown/ancestry_and_structure/moments
   - caption: Describing genetic variation at the sequence level
     chapters:
     - file: markdown/describing_variation_data/variation_data_intro
