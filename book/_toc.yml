@@ -14,6 +14,7 @@ parts:
     - file: markdown/kingman_coalsecent/trees_with_recombination
     - file: markdown/kingman_coalsecent/mutation_frequencies
     - file: markdown/kingman_coalsecent/expectaions
+    - file: markdown/kingman_coalsecent/distributions
   - caption: Linked selection
     chapters:
     - file: markdown/classic_selection_drift/sweep_from_new_mutation
