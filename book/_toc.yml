@@ -27,4 +27,5 @@ parts:
     - file: markdown/describing_variation_data/bioinformatics
   - caption: Appendix
     chapters:
+    - file: markdown/appendix/interactive.md
     - file: markdown/bibliography
