@@ -3,7 +3,7 @@ name: Build and deploy book
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, next_release]
   release:
     types: [created]
 
