@@ -10,10 +10,10 @@ kernelspec:
   name: python3
 ---
 
-# Variation in diversity along a recombining genome (interactive)
+# Variation in diversity along a recombining genome (interactive Python)
 
 This notebook is interactive.
-See {ref}`here <interactive_notebooks>` for more information.
+See {ref}`here <interactive_python_notebooks>` for more information.
 
 This applet is another take on the concepts shown in Figure 5 of {cite:t}`Hudson1990-ff`.
 
