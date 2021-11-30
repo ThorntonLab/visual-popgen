@@ -16,6 +16,9 @@ parts:
     - file: markdown/kingman_coalsecent/mutation_frequencies
     - file: markdown/kingman_coalsecent/expectations
     - file: markdown/kingman_coalsecent/distributions
+  - caption: Diffusion models
+    chapters:
+    - file: markdown/diffusion/sfs_selection
   - caption: Linked selection
     chapters:
     - file: markdown/classic_selection_drift/sweep_from_new_mutation
