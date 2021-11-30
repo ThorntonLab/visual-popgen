@@ -5,5 +5,3 @@ matplotlib
 numpy
 msprime==1.0.1
 pandas
-pytest
-scipy

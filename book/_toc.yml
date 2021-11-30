@@ -22,4 +22,8 @@ parts:
   - caption: Appendix
     chapters:
     - file: markdown/appendix/interactive.md
+    - file: markdown/appendix/holoviews_in_slides
+    - file: markdown/appendix/observable_in_slides
+    - file: markdown/appendix/python_dependencies
+    - file: markdown/appendix/acknowledgements
     - file: markdown/bibliography
