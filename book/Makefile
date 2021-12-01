@@ -7,4 +7,8 @@ all: $(INDEX)
 clean:
 	rm -rf _build
 
+linkcheck:
+	jupyter-book build . --builder linkcheck
+
+
 $(INDEX): $(MDFILE) _config.yml _toc.yml build.sh references.bib

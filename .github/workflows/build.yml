@@ -49,6 +49,11 @@ jobs:
         run: |
           make
 
+      - name: Check for dead links
+        working-directory: book
+        run: |
+          make linkcheck
+
       - name: Move built HTML book
         if: github.event_name == 'release'
         working-directory: book
@@ -86,3 +91,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACTIONS }} 
         with:
           build_dir: book_output/
+
