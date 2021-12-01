@@ -148,7 +148,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1">
@@ -169,6 +169,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -181,40 +193,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendix/interactive.html">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -282,11 +287,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/tree_structure.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/tree_structure.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -307,7 +312,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/popgen-course-material/main?urlpath=tree/book/markdown/kingman_coalsecent/tree_structure.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/visual-popgen/main?urlpath=tree/book/markdown/kingman_coalsecent/tree_structure.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -339,8 +344,8 @@
 </div>
 </div>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0b2c389b-f824-44bc-be57-f9b6501a9159" name="239d807d-e829-40f3-a4b5-8cc88377c137" type="radio">
-</input><label class="tabbed-label" for="0b2c389b-f824-44bc-be57-f9b6501a9159">
+<input checked="checked" id="07138006-3fe6-437c-b495-aec7a4a4a91e" name="b9567a46-0749-4caa-96be-9738c6d1d4e5" type="radio">
+</input><label class="tabbed-label" for="07138006-3fe6-437c-b495-aec7a4a4a91e">
 The tree</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree-structure" style="width: 800px">
 <div class="cell_output docutils container">
@@ -356,8 +361,8 @@ By convention, time zero (0) refers to the present.
 Time <em>increases</em> as we move from the present into the past.</span><a class="headerlink" href="#tree-structure" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<input id="3f71f60d-2c8e-49e2-b7ba-e710740c1dba" name="239d807d-e829-40f3-a4b5-8cc88377c137" type="radio">
-</input><label class="tabbed-label" for="3f71f60d-2c8e-49e2-b7ba-e710740c1dba">
+<input id="02d90c0a-6f68-436d-89e9-65c7b11e168f" name="b9567a46-0749-4caa-96be-9738c6d1d4e5" type="radio">
+</input><label class="tabbed-label" for="02d90c0a-6f68-436d-89e9-65c7b11e168f">
 Details</label><div class="tabbed-content docutils">
 <ul class="simple">
 <li><p>This tree is the <em>genalogical history</em> of a genomic region of length <span class="math notranslate nohighlight">\(L\)</span> units.</p></li>
@@ -369,8 +374,8 @@ But, it could be in more abstract, such as genetic distance.</p></li>
 <li><p>…unless there’s another mutation at the same position on one (or more) descendant lineages.</p></li>
 </ul>
 </div>
-<input id="190b55d8-c5b4-4dc1-8ed7-70d7ff369371" name="239d807d-e829-40f3-a4b5-8cc88377c137" type="radio">
-</input><label class="tabbed-label" for="190b55d8-c5b4-4dc1-8ed7-70d7ff369371">
+<input id="8da6e36a-13c7-44a6-916c-10a987bccc4c" name="b9567a46-0749-4caa-96be-9738c6d1d4e5" type="radio">
+</input><label class="tabbed-label" for="8da6e36a-13c7-44a6-916c-10a987bccc4c">
 More details</label><div class="tabbed-content docutils">
 <ul class="simple">
 <li><p>It is often convenient to measure time in generations divided by the ploidy times the population size.</p></li>

@@ -145,7 +145,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="markdown/kingman_coalsecent/recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1">
@@ -166,6 +166,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown/diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -178,40 +190,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown/describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown/describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown/describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown/describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="markdown/appendix/interactive.html">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown/appendix/holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown/appendix/observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown/appendix/python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown/appendix/acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -276,11 +281,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -301,6 +306,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technologies-used">
+   Technologies used
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrating-the-information-into-existing-courses">
+   Integrating the information into existing courses.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -311,6 +339,37 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This book is a collection of visualisations developed for teaching population genetics.
+The goal is to create a collection of interactive content that can be remixed alongside existing course material.</p>
+<p>The icons near the top right of this page will take you to the <code class="docutils literal notranslate"><span class="pre">GitHub</span></code> repository for this book.</p>
+<div class="section" id="technologies-used">
+<h2>Technologies used<a class="headerlink" href="#technologies-used" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jupyterbook.org">Jupyter book</a></p></li>
+<li><p><a class="reference external" href="https://www.observablehq.com">Observable</a> notebooks.
+These are pure JavaScript inserted into the book via <a class="reference external" href="https://observablehq.com/&#64;observablehq/introduction-to-embedding">embedding</a>.</p></li>
+<li><p><a class="reference external" href="https://www.holoviews.org">Holoviews</a> creates interactive JavaScript applications that require Python.
+These pages require <a class="reference external" href="https://mybinder.readthedocs.io/">MyBinder</a> to function, which just takes a few mouse clicks!.
+See <a class="reference internal" href="markdown/appendix/interactive.html#interactive-python-notebooks"><span class="std std-ref">here</span></a> for details.</p></li>
+</ul>
+</div>
+<div class="section" id="integrating-the-information-into-existing-courses">
+<h2>Integrating the information into existing courses.<a class="headerlink" href="#integrating-the-information-into-existing-courses" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Direct links to the many of the pages “just work” in “learning management” systems such as <a class="reference external" href="https://www.instructure.com/canvas">Canvas</a>.
+The exception is the pages requiring <code class="docutils literal notranslate"><span class="pre">MyBinder</span></code>.
+These pages need to be launched in the binder, or…</p></li>
+<li><p>…you can use them in slides as described <a class="reference internal" href="markdown/appendix/holoviews_in_slides.html#interactive-python-in-slides"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>The Observable content can also be used in slides.
+See <a class="reference internal" href="markdown/appendix/observable_in_slides.html#observable-in-slides"><span class="std std-ref">here</span></a> for instructions for <code class="docutils literal notranslate"><span class="pre">Jupyter</span></code> .</p></li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>The license is <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4</a>.</p>
+<p>Some of the code blocks have dependencies licensed as <a class="reference external" href="https://opensource.org/licenses/gpl-3.0.html">GPL3</a>.</p>
+<p>See <a class="reference external" href="https://creativecommons.org/2015/10/08/cc-by-sa-4-0-now-one-way-compatible-with-gplv3/">here</a> for a statement on the compatibility of the <code class="docutils literal notranslate"><span class="pre">GPL</span></code> and Creative Commons licenses.</p>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

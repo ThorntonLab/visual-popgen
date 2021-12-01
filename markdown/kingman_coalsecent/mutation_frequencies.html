@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Theoretical expectations" href="expectations.html" />
-    <link rel="prev" title="Variation in diversity along a recombining genome (interactive)" href="recombination_diversity.html" />
+    <link rel="prev" title="Variation in diversity along a recombining genome (interactive Python)" href="recombination_diversity.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -146,7 +146,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -167,6 +167,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -179,40 +191,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendix/interactive.html">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -280,11 +285,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/mutation_frequencies.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/mutation_frequencies.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -305,7 +310,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/popgen-course-material/main?urlpath=tree/book/markdown/kingman_coalsecent/mutation_frequencies.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/visual-popgen/main?urlpath=tree/book/markdown/kingman_coalsecent/mutation_frequencies.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -336,8 +341,8 @@
 <p>The trees are the same as <a class="reference internal" href="trees.html#trees-without-recombination"><span class="std std-ref">here</span></a>.</p>
 <p>The expected frequency distributions are branch statistics following <span id="id1">Ralph <em>et al.</em> [<a class="reference internal" href="../bibliography.html#id3">2020</a>]</span>.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="f325030c-71d0-438c-8f03-db8b26a943fe" name="30d1b1c2-d280-4ac3-ab2f-328a277b7963" type="radio">
-</input><label class="tabbed-label" for="f325030c-71d0-438c-8f03-db8b26a943fe">
+<input checked="checked" id="5a3fdb15-00c3-491a-b82a-951eb77e314e" name="b96a7840-4bef-4092-9046-42430032f064" type="radio">
+</input><label class="tabbed-label" for="5a3fdb15-00c3-491a-b82a-951eb77e314e">
 Example 1</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree1-fs" style="width: 800px">
 <div class="cell_output docutils container">
@@ -349,8 +354,8 @@ Example 1</label><div class="tabbed-content docutils">
 <img alt="../../_images/trees_1_0.svg" src="../../_images/trees_1_0.svg" /></div>
 </div>
 </div>
-<input id="307e83fc-7ebe-413e-a114-fd89849d7cad" name="30d1b1c2-d280-4ac3-ab2f-328a277b7963" type="radio">
-</input><label class="tabbed-label" for="307e83fc-7ebe-413e-a114-fd89849d7cad">
+<input id="f7cff81a-2fb1-4ea1-b2e1-f3c0782728f1" name="b96a7840-4bef-4092-9046-42430032f064" type="radio">
+</input><label class="tabbed-label" for="f7cff81a-2fb1-4ea1-b2e1-f3c0782728f1">
 Example 2</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree2-fs" style="width: 800px">
 <div class="cell_output docutils container">
@@ -362,8 +367,8 @@ Example 2</label><div class="tabbed-content docutils">
 <img alt="../../_images/trees_1_3.svg" src="../../_images/trees_1_3.svg" /></div>
 </div>
 </div>
-<input id="d58c1ceb-7a82-4004-9394-e4375ca5d132" name="30d1b1c2-d280-4ac3-ab2f-328a277b7963" type="radio">
-</input><label class="tabbed-label" for="d58c1ceb-7a82-4004-9394-e4375ca5d132">
+<input id="4a3793c5-2df4-4430-a10b-7464c5ee1f5d" name="b96a7840-4bef-4092-9046-42430032f064" type="radio">
+</input><label class="tabbed-label" for="4a3793c5-2df4-4430-a10b-7464c5ee1f5d">
 Example 3</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree3-fs" style="width: 800px">
 <div class="cell_output docutils container">
@@ -375,8 +380,8 @@ Example 3</label><div class="tabbed-content docutils">
 <img alt="../../_images/trees_1_5.svg" src="../../_images/trees_1_5.svg" /></div>
 </div>
 </div>
-<input id="0af98c50-aa96-4e79-85c7-cf56bf9859e5" name="30d1b1c2-d280-4ac3-ab2f-328a277b7963" type="radio">
-</input><label class="tabbed-label" for="0af98c50-aa96-4e79-85c7-cf56bf9859e5">
+<input id="31cb4763-9832-4eb8-bc16-f09861ccb465" name="b96a7840-4bef-4092-9046-42430032f064" type="radio">
+</input><label class="tabbed-label" for="31cb4763-9832-4eb8-bc16-f09861ccb465">
 Example 4</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree4-fs" style="width: 800px">
 <div class="cell_output docutils container">
@@ -388,8 +393,8 @@ Example 4</label><div class="tabbed-content docutils">
 <img alt="../../_images/trees_1_7.svg" src="../../_images/trees_1_7.svg" /></div>
 </div>
 </div>
-<input id="37bf9ec2-6807-4285-a93b-8b46c93c1f0d" name="30d1b1c2-d280-4ac3-ab2f-328a277b7963" type="radio">
-</input><label class="tabbed-label" for="37bf9ec2-6807-4285-a93b-8b46c93c1f0d">
+<input id="b89b6f54-2c45-49d9-b20a-23b65ec45033" name="b96a7840-4bef-4092-9046-42430032f064" type="radio">
+</input><label class="tabbed-label" for="b89b6f54-2c45-49d9-b20a-23b65ec45033">
 Example 5</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tree5-fs" style="width: 800px">
 <div class="cell_output docutils container">
@@ -433,7 +438,7 @@ Example 5</label><div class="tabbed-content docutils">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Variation in diversity along a recombining genome (interactive)</p>
+            <p class="prev-next-title">Variation in diversity along a recombining genome (interactive Python)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="expectations.html" title="next page">

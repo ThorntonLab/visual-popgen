@@ -146,7 +146,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,6 +167,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -179,40 +191,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendix/interactive.html">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -277,11 +282,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/expectations.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/expectations.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -313,20 +318,20 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="theoretical-expectations">
 <h1>Theoretical expectations<a class="headerlink" href="#theoretical-expectations" title="Permalink to this headline">¶</a></h1>
 <div class="tabbed-set docutils">
-<input checked="checked" id="4ef7dc09-00f3-4d9c-b4fb-fa24a24e31bd" name="2eaba919-84b4-4ac1-98e7-eb0581125a99" type="radio">
-</input><label class="tabbed-label" for="4ef7dc09-00f3-4d9c-b4fb-fa24a24e31bd">
+<input checked="checked" id="e598aa4a-6266-4481-81cd-2173bc1f6d4a" name="c9f85b89-6e71-4801-92e3-69f2884ad068" type="radio">
+</input><label class="tabbed-label" for="e598aa4a-6266-4481-81cd-2173bc1f6d4a">
 Time to most recent common ancestor</label><div class="tabbed-content docutils">
 <iframe width="100%" height="476" frameborder="0"
   src="https://observablehq.com/embed/@molpopgen/kingman?cells=plot_etmrca_vs_sample_size"></iframe>
 </div>
-<input id="e9509d85-7c80-48e7-84cc-865e0cc3ab0d" name="2eaba919-84b4-4ac1-98e7-eb0581125a99" type="radio">
-</input><label class="tabbed-label" for="e9509d85-7c80-48e7-84cc-865e0cc3ab0d">
+<input id="3a75c197-0754-4b92-948f-9f4bd2fb0541" name="c9f85b89-6e71-4801-92e3-69f2884ad068" type="radio">
+</input><label class="tabbed-label" for="3a75c197-0754-4b92-948f-9f4bd2fb0541">
 Total time on the tree</label><div class="tabbed-content docutils">
 <iframe width="100%" height="476" frameborder="0"
   src="https://observablehq.com/embed/@molpopgen/kingman?cells=plot_ettot_vs_sample_size"></iframe>
 </div>
-<input id="d53cf27b-cb87-4b2c-b0d7-4e1558b83051" name="2eaba919-84b4-4ac1-98e7-eb0581125a99" type="radio">
-</input><label class="tabbed-label" for="d53cf27b-cb87-4b2c-b0d7-4e1558b83051">
+<input id="15e0815c-56ec-435c-af9b-4afc4833f73c" name="c9f85b89-6e71-4801-92e3-69f2884ad068" type="radio">
+</input><label class="tabbed-label" for="15e0815c-56ec-435c-af9b-4afc4833f73c">
 Allele frequency spectrum</label><div class="tabbed-content docutils">
 <iframe width="100%" height="476" frameborder="0"
   src="https://observablehq.com/embed/@molpopgen/kingman?cells=plot_example_fs"></iframe>

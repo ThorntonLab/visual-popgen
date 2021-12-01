@@ -146,7 +146,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,6 +167,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -179,40 +191,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendix/interactive.html">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendix/acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -280,11 +285,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/model_for_data.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fmarkdown/kingman_coalsecent/model_for_data.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -305,7 +310,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/popgen-course-material/main?urlpath=tree/book/markdown/kingman_coalsecent/model_for_data.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ThorntonLab/visual-popgen/main?urlpath=tree/book/markdown/kingman_coalsecent/model_for_data.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -337,8 +342,8 @@
 </div>
 </div>
 <div class="tabbed-set docutils">
-<input checked="checked" id="1949429f-6dd0-4724-8183-7d524683caf3" name="ffe8075c-4218-417b-b82d-5313daa6e2e0" type="radio">
-</input><label class="tabbed-label" for="1949429f-6dd0-4724-8183-7d524683caf3">
+<input checked="checked" id="af0cefec-cd3c-4371-92b8-588f4d172274" name="87c429b0-7f10-499d-a0d8-ab47e53e0b63" type="radio">
+</input><label class="tabbed-label" for="af0cefec-cd3c-4371-92b8-588f4d172274">
 The data</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="variation-table-df" style="width: 800px">
 <div class="cell_output docutils container">
@@ -519,8 +524,8 @@ The data</label><div class="tabbed-content docutils">
 </div></div></div>
 </div>
 </div>
-<input id="b68743f9-21fd-42ea-94cb-4223f67d8ba8" name="ffe8075c-4218-417b-b82d-5313daa6e2e0" type="radio">
-</input><label class="tabbed-label" for="b68743f9-21fd-42ea-94cb-4223f67d8ba8">
+<input id="df7ff49b-df72-4d5c-a655-9b1d2eb1dddc" name="87c429b0-7f10-499d-a0d8-ab47e53e0b63" type="radio">
+</input><label class="tabbed-label" for="df7ff49b-df72-4d5c-a655-9b1d2eb1dddc">
 The tree</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="variation-table-tree" style="width: 800px">
 <div class="cell_output docutils container">

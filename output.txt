@@ -1,0 +1,6 @@
+intro.md:13: [redirected with Found] https://mybinder.readthedocs.io/ to https://mybinder.readthedocs.io/en/latest/
+markdown/diffusion/sfs_selection.md:18: [redirected with Found] https://moments.readthedocs.io to https://moments.readthedocs.io/en/main/
+markdown/appendix/holoviews_in_slides.md:11: [redirected permanently] https://www.jupyter.org to https://jupyter.org/
+intro.md:11: [redirected permanently] https://www.observablehq.com to https://observablehq.com/
+markdown/appendix/observable_in_slides.md:23: [redirected permanently] https://www.observablehq.com/@molpopgen to https://observablehq.com/@molpopgen
+intro.md:10: [redirected permanently] https://www.jupyterbook.org to https://jupyterbook.org/

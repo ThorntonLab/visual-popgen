@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive notebooks &#8212; Visual guide to concepts in population genetics.</title>
+    <title>Interactive Python notebooks &#8212; Visual guide to concepts in population genetics.</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Literature cited" href="../bibliography.html" />
-    <link rel="prev" title="Bioinformatic issues" href="../describing_variation_data/bioinformatics.html" />
+    <link rel="next" title="Using interactive Python applets in slideshow presentations" href="holoviews_in_slides.html" />
+    <link rel="prev" title="Selective “sweeps” (from new mutations)" href="../classic_selection_drift/sweep_from_new_mutation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -146,7 +146,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../kingman_coalsecent/recombination_diversity.html">
-   Variation in diversity along a recombining genome (interactive)
+   Variation in diversity along a recombining genome (interactive Python)
   </a>
  </li>
  <li class="toctree-l1">
@@ -167,6 +167,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Diffusion models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../diffusion/sfs_selection.html">
+   Mutation frequencies under selection (interactive Python)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Linked selection
  </span>
 </p>
@@ -179,40 +191,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Describing genetic variation at the sequence level
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/variation_data_intro.html">
-   Population genetic data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/descriptive_statistics.html">
-   Simple descriptive statistics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/real_data_complications.html">
-   The complexities of real data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../describing_variation_data/bioinformatics.html">
-   Bioinformatic issues
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Appendix
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Interactive notebooks
+   Interactive Python notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="holoviews_in_slides.html">
+   Using interactive Python applets in slideshow presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="observable_in_slides.html">
+   Using Observable content in Jupyter presentations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python_dependencies.html">
+   Python dependencies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowledgements.html">
+   Acknowledgements
   </a>
  </li>
  <li class="toctree-l1">
@@ -277,11 +282,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ThorntonLab/popgen-course-material"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ThorntonLab/visual-popgen"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ThorntonLab/popgen-course-material/issues/new?title=Issue%20on%20page%20%2Fmarkdown/appendix/interactive.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ThorntonLab/visual-popgen/issues/new?title=Issue%20on%20page%20%2Fmarkdown/appendix/interactive.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -310,15 +315,15 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="interactive-notebooks">
-<span id="id1"></span><h1>Interactive notebooks<a class="headerlink" href="#interactive-notebooks" title="Permalink to this headline">¶</a></h1>
-<p>Some of the pages of this book are interactive.
-They are labelled in the table of contents with <code class="docutils literal notranslate"><span class="pre">(interactive)</span></code>.
+  <div class="tex2jax_ignore mathjax_ignore section" id="interactive-python-notebooks">
+<span id="id1"></span><h1>Interactive Python notebooks<a class="headerlink" href="#interactive-python-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>Some of the pages of this book use interactions requiring Python.
+They are labelled in the table of contents with <code class="docutils literal notranslate"><span class="pre">(interactive</span> <span class="pre">Python)</span></code>.
 These pages may show a graphic, but it <em>does not</em> work as intended until you launch the page in interactive mode.</p>
 <p>To launch an interactive page, look for a “rocket ship” icon near the top right of the page.
 Click the rocket ship, then click on <code class="docutils literal notranslate"><span class="pre">Binder</span></code>.
 After some time (patience, please), you will get an interactive <a class="reference external" href="https://jupyter.org/">jupyter</a> notebook.
-Once the notebook is shown, push the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button and the interactive application will be built!</p>
+Once the notebook is shown, select the <code class="docutils literal notranslate"><span class="pre">Cell</span></code> menu and then <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">all</span></code> to build the application.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -346,17 +351,17 @@ Once the notebook is shown, push the <code class="docutils literal notranslate">
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../describing_variation_data/bioinformatics.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../classic_selection_drift/sweep_from_new_mutation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Bioinformatic issues</p>
+            <p class="prev-next-title">Selective “sweeps” (from new mutations)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../bibliography.html" title="next page">
+    <a class='right-next' id="next-link" href="holoviews_in_slides.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Literature cited</p>
+        <p class="prev-next-title">Using interactive Python applets in slideshow presentations</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

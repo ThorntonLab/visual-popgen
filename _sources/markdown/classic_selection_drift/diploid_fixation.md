@@ -1,3 +1,5 @@
+(fixation_in_diploid_population)=
+
 # Fixation in a diploid population
 
 <iframe width="100%" height="750" frameborder="0"
