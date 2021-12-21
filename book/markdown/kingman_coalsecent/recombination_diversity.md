@@ -31,7 +31,7 @@ hv.extension('bokeh', 'matplotlib')
 
 def branch_diversity_along_tree(rho, n, sequence_length=1e6, num_windows=500):
     wins = np.linspace(0, sequence_length, num_windows)
-    mids = (wins[1:] - wins[:1])/2
+    mids = (wins[1:] + wins[:-1])/2
     ts = msprime.sim_ancestry(n, ploidy=1,
                               sequence_length=sequence_length,
                               recombination_rate=rho/4/sequence_length)
