@@ -31,7 +31,7 @@ hv.extension('bokeh', 'matplotlib')
 
 def branch_diversity_along_tree(rho, n, sequence_length=1e6, num_windows=500):
     wins = np.linspace(0, sequence_length, num_windows)
-    mids = (wins[1:] - wins[:1])/2
+    mids = (wins[1:] + wins[:-1])/2
     ts = msprime.sim_ancestry(n, ploidy=1,
                               sequence_length=sequence_length,
                               recombination_rate=rho/4/sequence_length)
@@ -39,8 +39,10 @@ def branch_diversity_along_tree(rho, n, sequence_length=1e6, num_windows=500):
     diversity = ts.diversity(windows=wins, mode="branch").flatten()
     return hv.Curve((mids, diversity)).opts(tools=["box_select"]).redim(y=hv.Dimension('y',
                                                                                        range=(0, 1.1*diversity.max()))).opts(xlabel="Window midpoint", ylabel="Diversity (branch stat)")
+kdims = [hv.Dimension('rho', range=(0, 1000), step=100, default=0),
+         hv.Dimension('n', range=(10, 100), step=10, default=10)]
 
 divplot = hv.DynamicMap(branch_diversity_along_tree,
-                        kdims=['rho', 'n']).redim.range(rho=(0, 1000), n=(10, 100)).opts(framewise=True, width=500)
+                        kdims=kdims).opts(framewise=True, width=500)
 divplot
 ```
